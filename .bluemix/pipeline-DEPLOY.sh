@@ -57,10 +57,10 @@ function deploy_composer_contract {
         do
             if [[ "${OUTPUT}" = *"REQUEST_TIMEOUT"* ]]
             then
-                sleep 30
+                sleep 15
             elif [[ "${OUTPUT}" = *"premature execution"* ]]
             then
-                sleep 30
+                sleep 15
             elif [[ "${OUTPUT}" = *"chaincode exists"* ]]
             then
                 BUSINESS_NETWORK_UPGRADE=true
@@ -76,10 +76,10 @@ function deploy_composer_contract {
             do
                 if [[ "${OUTPUT}" = *"REQUEST_TIMEOUT"* ]]
                 then
-                    sleep 30
+                    sleep 15
                 elif [[ "${OUTPUT}" = *"premature execution"* ]]
                 then
-                    sleep 30
+                    sleep 15
                 elif [[ "${OUTPUT}" = *"version already exists for chaincode"* ]]
                 then
                     break
@@ -131,10 +131,10 @@ EOF
     do
         if [[ "${OUTPUT}" = *"Failed to establish a backside connection"* ]]
         then
-            sleep 30
+            sleep 15
         elif [[ "${OUTPUT}" = *"premature execution"* ]]
         then
-            sleep 30
+            sleep 15
         elif [[ "${OUTPUT}" = *"version already exists for chaincode"* ]]
         then
             break

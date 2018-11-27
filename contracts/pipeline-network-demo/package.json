@@ -2,11 +2,11 @@
   "engines": {
     "composer": "^0.20.4"
   },
-  "name": "pipeline-network",
+  "name": "pipeline-network-demo",
   "version": "0.0.1",
   "description": "description",
   "scripts": {
-    "prepublish": "mkdirp ./dist && composer archive create --sourceType dir --sourceName . -a ./dist/pipeline-network.bna",
+    "prepublish": "mkdirp ./dist && composer archive create --sourceType dir --sourceName . -a ./dist/pipeline-network-demo.bna",
     "pretest": "npm run lint",
     "lint": "eslint ."
   },

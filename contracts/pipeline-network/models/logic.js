@@ -1,9 +1,9 @@
+/*eslint strict: [2, "never"]*/
 /**
- * transaction processor function.
- * @param {org.example.mynetwork.updatepipeTransaction} txParms
- * @transaction
- */
-async function updpipeTxfn(txParms) {   
+* @param {org.example.mynetwork.updatepipeTransaction} txParms -- Pipe transaction to be added
+* @transaction
+*/
+async function updpipeTxfn(txParms) {
     console.log('Here1');
     // Save the old value of the pipe.
     const oldLat = txParms.pipe.latitude;
